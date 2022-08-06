@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CarmackCal_ClientInterface</title>
+		<style>
+		html
+		{
+			background: #000000;
+		}
+
+		/*CAL*/
+		.calandar
+		{
+			display: flex;
+			width: 100;
+			height: 100;
+			font-family: 'Courier New', monospace;
+			font-weight: bold;
+			background-color: black;
+			flex-wrap: wrap;
+		}
+
+		.calandar_header
+		{
+			display: flex;
+			width: 100%;
+			min-width: 100%;
+			height: 10%;
+			min-height: 10%;
+			max-height: 10%;
+			text-align: center;
+			margin-bottom: 10px;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		.calandar_name
+		{
+			display: flex;
+			width: 100%;
+			text-align: center;
+			color: #FC5C77;
+			justify-content: center;
+		}
+
+		.month_navbar
+		{
+			display: flex;
+			flex-flow: row;
+			justify-content: center;
+		}
+		
+		.month
+		{
+			display: inline-flex;
+			width: 50%;
+			justify-content: center;
+			text-align: center;
+			color: #FC5C77;
+		}
+
+		.month_forward
+		{
+			display: inline-flex;
+			width: 25%;
+			padding-left: 25%;
+			text-align: left;
+			color: #FC5C77;
+		}
+
+		.month_backward
+		{
+			display: inline-flex;
+			width: 25%;
+			padding-right: 25%;
+			text-align: right;
+			color: #FC5C77;
+		}
+
+		.calandar_body
+		{
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+			height: 85%;
+			max-height: 90%;
+			border-top: 4px solid linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(252,60,119,1) 50%, rgba(0,0,0,0) 100%);
+			border-bottom: 4px solid linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(252,60,119,1) 50%, rgba(0,0,0,0) 100%);
+		}
+
+		.calandar_days
+		{
+			display: flex;
+			width: 100%;
+			padding-left: 0px;
+			counter-reset: daycounter;
+			list-style-type: none;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+
+		.calandar_days > li
+		{
+			display: flex;
+			color: #fc5c77;
+			border: 2px solid #fc5c77;
+			box-shadow: 0px 0px 8px #fc5c77;
+			width: 24%;
+			height: 50%;
+		}
+
+		.calandar_days > li:before
+		{
+			display: flex;
+			position: relative;
+			color: #fc5c77;
+			counter-increment: daycounter;
+			content: counter(daycounter) "";
+			height: 20%;
+		}
+
+		.day_tag
+		{
+			display: inline-flex;
+			width: 98%;
+			color: #08CBCE;
+			text-shadow: 0px 0px 20px #08CBCE;
+			justify-content: center;
+		}
+		</style>
+		<script src="calandar_core.js">
+		</script>
+	</head>
+
+	<body>
+		<div class="calandar">
+			<div class="calandar_header">
+				<h2 class="calandar_name">CarmackCal</h2>
+				<div class="month_navbar">
+					<h3 class="month_backward"><</h3>
+					<h3 id="month" class="month">Loading...</h3>
+					<h3 class="month_forward">></h3>
+				</div>
+			</div>
+			<div class="calandar_body">
+				<ol class="calandar_days">
+					<!--
+						To future me so I remember why I did it this way:
+						This allows direct access to the right DOM element without needing to have an array of DOM elements created with JS, therby having a faster initial load since it doesn't need to wait for execution to render to the browser.
+
+					-->
+					<li id="Day1" onclick="">
+						<span class="day_tag"></span>
+					</li>
+					<li id="Day2" onclick="">
+						<span class="day_tag"></span>
+					</li>>
+					<li id="Day3" onclick="">
+						<span class="day_tag"></span>
+					</li>
+					<li id="Day4" onclick="">
+						<span class="day_tag"></span>
+					</li>
+					<li id="Day5" onclick="">
+						<span class="day_tag"></span>
+					</li>
+					<li id="Day6" onclick="">
+						<span class="day_tag"></span>
+					</li>
+					<li id="Day7" onclick="">
+						<span class="day_tag"></span>
+					</li>
+					<li id="Day8" onclick="">
+						<span class="day_tag"></span>
+					</li>
+					<li id="Day9" onclick="">
+						<span class="day_tag"></span>
+					</li>
+					<li id="Day10" onclick="">
+						<span class="day_tag"></span>
+					</li>
+					<li id="Day11" onclick="">
+						<span class="day_tag"></span>
+					</li>
+					<li id="Day12" onclick="">
+						<span class="day_tag"></span>
+					</li>
+					<li id="Day13" onclick="">
+						<span class="day_tag"></span>
+					</li>
+					<li id="Day14" onclick="">
+						<span class="day_tag"></span>
+					</li>
+					<li id="Day15" onclick="">
+						<span class="day_tag"></span>
+					</li>
+					<li id="Day16" onclick="">
+						<span class="day_tag"></span>
+					</li>
+					<li id="Day17" onclick="">
+						<span class="day_tag"></span>
+					</li>
+					<li id="Day18" onclick="">
+						<span class="day_tag"></span>
+					</li>
+					<li id="Day19" onclick="">
+						<span class="day_tag"></span>
+					</li>
+					<li id="Day20" onclick="">
+						<span class="day_tag"></span>
+					</li>
+					<li id="Day21" onclick="">
+						<span class="day_tag"></span>
+					</li>
+					<li id="Day22" onclick="">
+						<span class="day_tag"></span>
+					</li>
+					<li id="Day23" onclick="">
+						<span class="day_tag"></span>
+					</li>
+					<li id="Day24" onclick="">
+						<span class="day_tag"></span>
+					</li>
+					<li id="Day25" onclick="">
+						<span class="day_tag"></span>
+					</li>
+					<li id="Day26" onclick="">
+						<span class="day_tag"></span>
+					</li>
+					<li id="Day27" onclick="">
+						<span class="day_tag"></span>
+					</li>
+					<li id="Day28" onclick="">
+						<span class="day_tag"></span>
+					</li>
+					<li id="Day29" onclick="">
+						<span class="day_tag"></span>
+					</li>
+					<li id="Day30" onclick="">
+						<span class="day_tag"></span>
+					</li>
+					<li id="Day31" onclick="">
+						<span class="day_tag"></span>
+					</li>
+					<li id="Day32" onclick="">
+						<span class="day_tag"></span>
+					</li>
+				</ol>
+			</div>
+		</div>
+	</body>
+</html
