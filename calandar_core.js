@@ -51,7 +51,9 @@ class Month
 }
 
 /*Globals*/
-var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "November", "December"];
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "November", "December"];
+
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 var today = new Date();
 var monthView = today.getMonth();
@@ -98,48 +100,13 @@ function getMonthStr(month_no)
 		return "ERROR";
 	}
 
-	switch(month_no)
+	if (month_no > months.length)
 	{
-		case 0:
-			return "January";
-			break;
-		case 1:
-			return "February";
-			break;
-		case 2:
-			return "March";
-			break;
-		case 3:
-			return "April";
-			break;
-		case 4:
-			return "May";
-			break;
-		case 5:
-			return "June";
-			break;
-		case 6:
-			return "July";
-			break;
-		case 7:
-			return "August";
-			break;
-		case 8:
-			return "September";
-			break;
-		case 9:
-			return "October";
-			break;
-		case 10:
-			return "November";
-			break;
-		default:
-			return "December";
-			break;
+		console.warn("Argument provided for getMonthStr is outside of range!");
+		return "ERROR";
 	}
 
-	console.warn("Month number fallthrough in getMonthStr! Valid values: 0-11. Returned ERROR.");
-	return "ERROR";
+	return months[month_no];
 }
 
 //Returns a string from the number of the day of the week. Returns ERROR on failure.
@@ -151,33 +118,13 @@ function getDayStr(day_no)
 		return "ERROR";
 	}
 
-	switch(day_no)
+	if (day_no > days.length)
 	{
-		case 0:
-			return "Sunday";
-			break;
-		case 1:
-			return "Monday";
-			break;
-		case 2:
-			return "Tuesday";
-			break;
-		case 3:
-			return "Wednesday";
-			break;
-		case 4:
-			return "Thursday";
-			break;
-		case 5:
-			return "Friday";
-			break;
-		default:
-			return "Saturday";
-			break;
+		console.warn("getDayStr provided an out-of-range value.");
+		return "ERROR";
 	}
 
-	console.warn("Day number fallthrough!");
-	return "Saturday";
+	return days[day_no];
 }
 
 //Sets the days of the week in the DOM. Arguments are the month as a number and the year as a number. Returns 0 on failure and 1 on success.
