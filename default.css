@@ -1,14 +1,14 @@
 html
 {
-	background: #000000;
+	background: #FFFFFF;
 }
 
 /*CAL*/
 
 /*Color pallet:
-Bright Pink: FC5C77
-Dark Pink: F9264A
-Neon Blue: 08CBCD
+Heading: #999;
+Light: #bbb;
+Bolded: #aaa;
 */
 
 .calandar
@@ -16,7 +16,7 @@ Neon Blue: 08CBCD
 	display: flex;
 	font-family: 'Courier New', monospace;
 	font-weight: bold;
-	background-color: black;
+	background-color: #eeeeee;
 	flex-wrap: wrap;
 }
 
@@ -34,13 +34,23 @@ Neon Blue: 08CBCD
 	justify-content: center;
 }
 
+.calandar_navbar
+{
+	display: flex;
+	width: 100%;
+	background: linear-gradient(0deg, rgba(255,72,0,1) 0%, rgba(255,147,0,1) 100%);
+	border-radius: 21px; 
+}
+
 .calandar_name
 {
 	display: flex;
 	width: 100%;
 	text-align: center;
-	color: #FC5C77;
+	color: #FFFFFF;
 	justify-content: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 .month_navbar
@@ -56,7 +66,7 @@ Neon Blue: 08CBCD
 	width: 50%;
 	justify-content: center;
 	text-align: center;
-	color: #FC5C77;
+	color: #999;
 }
 
 .month_forward
@@ -65,7 +75,7 @@ Neon Blue: 08CBCD
 	width: 25%;
 	padding-left: 25%;
 	text-align: left;
-	color: #08CBCD;
+	color: #bbb;
 }
 
 .month_backward
@@ -74,7 +84,7 @@ Neon Blue: 08CBCD
 	width: 25%;
 	padding-right: 25%;
 	text-align: right;
-	color: #08CBCD;
+	color: #bbb;
 }
 
 .calandar_body
@@ -99,9 +109,8 @@ Neon Blue: 08CBCD
 .calandar_days > li
 {
 	display: flex;
-	color: #fc5c77;
-	border: 2px solid #fc5c77;
-	box-shadow: 0px 0px 8px #fc5c77;
+	color: #000000;
+	border: 2px solid #ddd;
 	width: 24%;
 	max-height: 50%;
 }
@@ -110,7 +119,7 @@ Neon Blue: 08CBCD
 {
 	display: flex;
 	position: relative;
-	color: #08CBCD;
+	color: #aaa;
 	counter-increment: daycounter;
 	content: counter(daycounter) "";
 	height: 20%;
@@ -120,7 +129,6 @@ Neon Blue: 08CBCD
 {
 	display: inline-flex;
 	width: 98%;
-	color: #08CBCE;
-	text-shadow: 0px 0px 20px #08CBCE;
+	color: #bbb;
     	justify-content: center;
 }
