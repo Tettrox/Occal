@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html>
 	<head>
-
 		<meta charset="UTF-8">
 		<meta name="description" content="Occal: A tiny customizable open-source calandar.">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		<title>Occal</title>
 		
+		<!--To switch the theme of your calandar, modify href="[name of theme file in same directory]" or add a new stylesheet link tag below this.-->
 		<link rel="stylesheet" href="default.css">
 		<script src="calandar_core.js"></script>
 	</head>
 
 	<body>
+		<!--Viewable part for embed.-->
 		<div class="calandar">
 			<div class="calandar_header">
-				<div class="calandar_navbar">	
+				<!--Top navbar container.-->
+				<div class="calandar_navbar">
+					<!--Calandar name at top of page.-->
 					<h2 class="calandar_name">Occal</h2>
 				</div>
+				<!--Container for month navigation; forward, back, name, etc.-->
 				<div class="month_navbar">
 					<h3 class="month_backward"><</h3>
+					<!--This is set in calandar_core on page load.-->
 					<h3 id="month" class="month">Loading...</h3>
 					<h3 class="month_forward">></h3>
 				</div>
 			</div>
 			<div class="calandar_body">
+				<!--Organizer for all calandar days.-->
 				<ol class="calandar_days">
+					<!--Day numbers are set in CSS on li:before inside calandar_days.-->
+					<!--Day tags are set on page load in calandar_core.-->
 					<li id="Day1" onclick="">
 						<span class="day_tag"></span>
 					</li>
