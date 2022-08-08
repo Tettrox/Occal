@@ -1,14 +1,15 @@
 html
 {
-	background: #FFFFFF;
+	background: #eeeeee;
 }
 
 /*CAL*/
 
 /*Color pallet:
-Heading: #999;
-Light: #bbb;
-Bolded: #aaa;
+ * Background: #eee
+ * Heading: #999;
+ * Light: #bbb;
+ * Bolded: #aaa;
 */
 
 .calandar
