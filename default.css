@@ -1,17 +1,18 @@
+/*Modifies entire page. May not be visible when embedded. Set this to the same value as .calandar background!*/
 html
 {
 	background: #eeeeee;
 }
 
-/*CAL*/
-
-/*Color pallet:
+/*
+ * Color pallet:
  * Background: #eee
  * Heading: #999;
  * Light: #bbb;
  * Bolded: #aaa;
 */
 
+/*Modifies the container that seperates the calandar from the rest of the page; Set your background color here!*/
 .calandar
 {
 	display: flex;
@@ -21,6 +22,7 @@ html
 	flex-wrap: wrap;
 }
 
+/*This div contains the month navigation bar and the name of the calandar.*/
 .calandar_header
 {
 	display: flex;
@@ -35,6 +37,7 @@ html
 	justify-content: center;
 }
 
+/*This modifies the top calandar bar. Modify the background of the calandar name here.*/
 .calandar_navbar
 {
 	display: flex;
@@ -43,6 +46,7 @@ html
 	border-radius: 21px; 
 }
 
+/*The calandar name tag. For adjusting the name of the calandar, modify the HTML instead.*/
 .calandar_name
 {
 	display: flex;
@@ -54,6 +58,7 @@ html
 	margin-bottom: 0px;
 }
 
+/*Modifies the container for the current month text and the forward and reverse month buttons.*/
 .month_navbar
 {
 	display: flex;
@@ -61,6 +66,7 @@ html
 	justify-content: center;
 }
 
+/*Modifies the header with the current month name.*/
 .month
 {
 	display: inline-flex;
@@ -70,6 +76,7 @@ html
 	color: #999;
 }
 
+/*Modifies the "next month" button, by default the ">" button.*/
 .month_forward
 {
 	display: inline-flex;
@@ -79,6 +86,7 @@ html
 	color: #bbb;
 }
 
+/*Modifies the "previous month" button, by default the "<" button.*/
 .month_backward
 {
 	display: inline-flex;
@@ -88,6 +96,7 @@ html
 	color: #bbb;
 }
 
+/*The container that holds the body of the calandar.*/
 .calandar_body
 {
 	display: flex;
@@ -96,6 +105,7 @@ html
 	border-bottom: 4px solid linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(252,60,119,1) 50%, rgba(0,0,0,0) 100%);
 }
 
+/*The list that holds all of the days of the month.*/
 .calandar_days
 {
 	display: flex;
@@ -107,6 +117,7 @@ html
 	flex-wrap: wrap;
 }
 
+/*Modifier for the day elements. For the day number, see .calandar_days > li:before. For the day of the week, see .day_tag.*/
 .calandar_days > li
 {
 	display: flex;
@@ -116,6 +127,7 @@ html
 	max-height: 50%;
 }
 
+/*The number of the day of the week seen on each day in the calandar.*/
 .calandar_days > li:before
 {
 	display: flex;
@@ -126,6 +138,7 @@ html
 	height: 20%;
 }
 
+/*Modifies the day of the week shown on each day in the calandar.*/
 .day_tag
 {
 	display: inline-flex;
