@@ -167,3 +167,15 @@ html
 	color: white;
 	font-size: 24px;
 }
+
+.sidebar
+{
+	display: flex;
+	position: absolute;
+	top: 36px;
+	z-index: 2;
+	background-color: white;
+	width: 20%;
+	height: 100%;
+	visibility: hidden;
+}
