@@ -54,8 +54,7 @@ html
 	text-align: center;
 	color: #FFFFFF;
 	justify-content: center;
-	margin-top: 0px;
-	margin-bottom: 0px;
+	margin: auto;
 }
 
 /*Modifies the container for the current month text and the forward and reverse month buttons.*/
@@ -159,4 +158,12 @@ html
 	color: #bbb;
 	width: 100%;
 	justify-content: right;
+}
+
+.sidebar_btn
+{
+	display: inline-flex;
+	margin-left: 1rem;
+	color: white;
+	font-size: 24px;
 }
