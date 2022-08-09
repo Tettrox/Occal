@@ -179,3 +179,16 @@ html
 	height: 100%;
 	visibility: hidden;
 }
+
+/*Animations*/
+@keyframes sidebar_open
+{
+	from
+	{
+		width: 0%;
+	}
+	to
+	{
+		width: 20%;
+	}
+}
