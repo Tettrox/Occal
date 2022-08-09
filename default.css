@@ -146,3 +146,17 @@ html
 	color: #bbb;
     	justify-content: center;
 }
+
+.calandar_footer
+{
+	display: flex;
+	width: 100%;
+}
+
+.calandar_version
+{
+	display: flex;
+	color: #bbb;
+	width: 100%;
+	justify-content: right;
+}
