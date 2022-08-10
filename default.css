@@ -55,6 +55,8 @@ html
 	color: #FFFFFF;
 	justify-content: center;
 	margin: auto;
+	position: relative;
+	right: 1rem;
 }
 
 /*Modifies the container for the current month text and the forward and reverse month buttons.*/
