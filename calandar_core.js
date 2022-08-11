@@ -58,6 +58,7 @@ const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", 
 var today = new Date();
 var monthView = today.getMonth();
 var objectives = [];
+var tasks = [];
 
 //Increments the month view either forwards or backwards. Argument is a string that can be: forwards, backwards. Returns 1 on success or 0 on failure.
 function incrementMonthView(direction)
@@ -68,27 +69,30 @@ function incrementMonthView(direction)
 		return 0;
 	}
 
-	if (direction == "forwards" && monthView < 11)
+	if (direction == "forwards" && monthView < 12)
 	{
 		monthView += 1;
-		return 1;
 	} else if (direction == "forwards") {
 		monthView = 0;
-		return 1;
 	}
 
 	if (direction == "backwards" && monthView > 0)
 	{
 		monthView -= 1;
-		setWeekday
-		return 1;
 	} else if (direction == "backwards") {
-		monthView = 12;
-		return 1;
+		monthView = 11;
 	}
 
-	console.warn("Incorrect value for argument in incrementMonthView; Options: forwards, backwards.");
-	return 0;
+	resizeDaysInMonth(monthView, today.getYear());
+	setWeekdayNames(monthView, today.getYear());
+	updateMonthStr(monthView);	
+	console.log("Month view changed: " + monthView);
+	return 1;
+}
+
+function updateMonthStr(month_no)
+{
+	document.getElementById("month").innerHTML = getMonthStr(month_no);
 }
 
 //Returns the name of a month. Argument is a number between 0 and 11. Returns ERROR on failure.
@@ -158,7 +162,6 @@ function setWeekdayNames(month_no, year)
 function resizeDaysInMonth(month_no, year)
 {
 	let currentDate = new Date(year, month_no + 1, 0);
-	console.log(currentDate.getDate());
 
 	for (let i = currentDate.getDate() + 1; i < 33; i++)
 	{
