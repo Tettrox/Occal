@@ -171,6 +171,23 @@ function showCreationMenu(start_date)
 		
 }
 
+//Toggles visibility of sidebar using animation. Returns 0 when closed and 1 when opened.
+function toggleSidebar()
+{
+	let sidebar = document.querySelector("#sidebar_main");
+	let compStyles = window.getComputedStyle(sidebar);	
+	console.log(compStyles.getPropertyValue('width'));
+	
+	if (compStyles.getPropertyValue('width') == "0px")
+	{
+		sidebar.style.animation = "0.2s sidebar_open forwards";
+		return 1;
+	}
+
+	sidebar.style.animation = "0.2s sidebar_close forwards";
+	return 0;
+}
+
 /*Init*/
 function init()
 {
