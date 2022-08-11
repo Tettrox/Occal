@@ -23,10 +23,10 @@
 				</div>
 				<!--Container for month navigation; forward, back, name, etc.-->
 				<div class="month_navbar">
-					<h3 class="month_backward"><</h3>
+					<h3 class="month_backward" onclick="incrementMonthView('backwards')"><</h3>
 					<!--This is set in calandar_core on page load.-->
 					<h3 id="month" class="month">Loading...</h3>
-					<h3 class="month_forward">></h3>
+					<h3 class="month_forward" onclick="incrementMonthView('forwards')">></h3>
 				</div>
 			</div>
 			<div id="sidebar_main" class="sidebar">
