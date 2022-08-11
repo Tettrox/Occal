@@ -9,7 +9,6 @@
 		
 		<!--To switch the theme of your calandar, modify href="[name of theme file in same directory]" or add a new stylesheet link tag below this.-->
 		<link rel="stylesheet" href="default.css">
-		<script src="calandar_core.js"></script>
 	</head>
 
 	<body>
@@ -18,7 +17,7 @@
 			<div class="calandar_header">
 				<!--Top navbar container.-->
 				<div class="calandar_navbar">
-					<span class="sidebar_btn">≡</span>
+					<span class="sidebar_btn" onclick="toggleSidebar()">≡</span>
 					<!--Calandar name at top of page.-->
 					<h2 class="calandar_name">Occal</h2>
 				</div>
@@ -30,7 +29,7 @@
 					<h3 class="month_forward">></h3>
 				</div>
 			</div>
-			<div class="sidebar">
+			<div id="sidebar_main" class="sidebar">
 				
 			</div>
 			<div class="calandar_body">
@@ -140,5 +139,6 @@
 				<span class="calandar_version">v0.2.1.0</span>
 			</div>
 		</div>
+	<script src="calandar_core.js"></script>	
 	</body>
 </html>

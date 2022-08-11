@@ -170,16 +170,15 @@ html
 	font-size: 24px;
 }
 
-.sidebar
+#sidebar_main, .sidebar
 {
 	display: flex;
 	position: absolute;
 	top: 36px;
 	z-index: 2;
 	background-color: white;
-	width: 20%;
+	width: 0%;
 	height: 100%;
-	visibility: hidden;
 }
 
 /*Animations*/
@@ -192,5 +191,17 @@ html
 	to
 	{
 		width: 20%;
+	}
+}
+
+@keyframes sidebar_close
+{
+	from
+	{
+		width: 20%;
+	}
+	to
+	{
+		width: 0%;
 	}
 }
