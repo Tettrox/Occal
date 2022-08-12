@@ -168,6 +168,7 @@ html
 	margin-left: 1rem;
 	color: white;
 	font-size: 24px;
+	z-index: 1;
 }
 
 #sidebar_main, .sidebar
