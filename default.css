@@ -12,6 +12,11 @@ html
  * Bolded: #aaa;
 */
 
+.full-width
+{
+	display: flex;
+	width: 100%;
+}
 /*Modifies the container that seperates the calandar from the rest of the page; Set your background color here!*/
 .calandar
 {
@@ -25,12 +30,7 @@ html
 /*This div contains the month navigation bar and the name of the calandar.*/
 .calandar_header
 {
-	display: flex;
-	width: 100%;
-	min-width: 100%;
 	height: 10%;
-	min-height: 10%;
-	max-height: 10%;
 	text-align: center;
 	margin-bottom: 10px;
 	flex-wrap: wrap;
@@ -40,8 +40,6 @@ html
 /*This modifies the top calandar bar. Modify the background of the calandar name here.*/
 .calandar_navbar
 {
-	display: flex;
-	width: 100%;
 	background: linear-gradient(0deg, rgba(255,72,0,1) 0%, rgba(255,147,0,1) 100%);
 	border-radius: 21px; 
 }
@@ -49,8 +47,6 @@ html
 /*The calandar name tag. For adjusting the name of the calandar, modify the HTML instead.*/
 .calandar_name
 {
-	display: flex;
-	width: 100%;
 	text-align: center;
 	color: #FFFFFF;
 	justify-content: center;
@@ -109,8 +105,6 @@ html
 /*The list that holds all of the days of the month.*/
 .calandar_days
 {
-	display: flex;
-	width: 100%;
 	padding-left: 0px;
 	counter-reset: daycounter;
 	list-style-type: none;
@@ -148,17 +142,9 @@ html
     	justify-content: center;
 }
 
-.calandar_footer
-{
-	display: flex;
-	width: 100%;
-}
-
 .calandar_version
 {
-	display: flex;
 	color: #bbb;
-	width: 100%;
 	justify-content: right;
 }
 
@@ -186,23 +172,15 @@ html
 @keyframes sidebar_open
 {
 	from
-	{
-		width: 0%;
-	}
+	{ width: 0%; }
 	to
-	{
-		width: 20%;
-	}
+	{ width: 20%; }
 }
 
 @keyframes sidebar_close
 {
 	from
-	{
-		width: 20%;
-	}
+	{ width: 20%; }
 	to
-	{
-		width: 0%;
-	}
+	{ width: 0%; }
 }
