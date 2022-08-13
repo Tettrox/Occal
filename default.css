@@ -127,7 +127,6 @@ html
 .calandar_days > li
 {
 	display: flex;
-	color: #000000;
 	border: 2px solid #ddd;
 	width: 24%;
 	max-height: 50%;
@@ -138,7 +137,6 @@ html
 {
 	display: flex;
 	position: relative;
-	color: #aaa;
 	counter-increment: daycounter;
 	content: counter(daycounter) "";
 	height: 20%;
