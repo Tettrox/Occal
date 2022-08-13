@@ -178,15 +178,18 @@ function showCreationMenu(start_date)
 function toggleSidebar()
 {
 	let sidebar = document.querySelector("#sidebar_main");
+	let calNavbar = document.getElementsByClassName("calandar_navbar")[0];
 	let compStyles = window.getComputedStyle(sidebar);	
 	console.log(compStyles.getPropertyValue('width'));
 	
 	if (compStyles.getPropertyValue('width') == "0px")
 	{
+		calNavbar.style.animation = "0.2s unpack_calnavbar forwards";
 		sidebar.style.animation = "0.2s sidebar_open forwards";
 		return 1;
 	}
 
+	calNavbar.style.animation = "0.2s pack_calnavbar forwards";
 	sidebar.style.animation = "0.2s sidebar_close forwards";
 	return 0;
 }
