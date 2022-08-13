@@ -12,6 +12,18 @@ html
  * Bolded: #aaa;
 */
 
+/*Color quickmod*/
+.important-txt-color
+{ color: white; }
+
+.primary-txt-color
+{ color: #aaa; }
+
+.secondary-txt-color
+{ color: #bbb; }
+
+
+
 .full-width
 {
 	display: flex;
@@ -70,7 +82,6 @@ html
 	width: 50%;
 	justify-content: center;
 	text-align: center;
-	color: #999;
 }
 
 /*Modifies the "next month" button, by default the ">" button.*/
@@ -138,13 +149,11 @@ html
 {
 	display: inline-flex;
 	width: 98%;
-	color: #bbb;
     	justify-content: center;
 }
 
 .calandar_version
 {
-	color: #bbb;
 	justify-content: right;
 }
 
