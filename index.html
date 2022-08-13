@@ -14,12 +14,12 @@
 	<body>
 		<!--Viewable part for embed.-->
 		<div class="calandar">
-			<div class="calandar_header">
+			<div class="calandar_header full-width">
 				<!--Top navbar container.-->
-				<div class="calandar_navbar">
+				<div class="calandar_navbar full-width">
 					<span class="sidebar_btn" onclick="toggleSidebar()">≡</span>
 					<!--Calandar name at top of page.-->
-					<h2 class="calandar_name">Occal</h2>
+					<h2 class="calandar_name full-width">Occal</h2>
 				</div>
 				<!--Container for month navigation; forward, back, name, etc.-->
 				<div class="month_navbar">
@@ -34,7 +34,7 @@
 			</div>
 			<div class="calandar_body">
 				<!--Organizer for all calandar days.-->
-				<ol class="calandar_days">
+				<ol class="calandar_days full-width">
 					<!--Day numbers are set in CSS on li:before inside calandar_days.-->
 					<!--Day tags are set on page load in calandar_core.-->
 					<li id="Day1" onclick="">
@@ -135,8 +135,8 @@
 					</li>
 				</ol>
 			</div>
-			<div class="calandar_footer">
-				<span class="calandar_version">v0.4.0.1</span>
+			<div class="calandar_footer full-width">
+				<span class="calandar_version full-width">v0.4.0.1</span>
 			</div>
 		</div>
 	<script src="calandar_core.js"></script>	
