@@ -1,128 +1,31 @@
 html
 {
-	background: #000000;
+	background-color: black;
 }
-
-/*CAL*/
-
-/*Color pallet:
-Bright Pink: FC5C77
-Dark Pink: F9264A
-Neon Blue: 08CBCD
-*/
 
 .calandar
 {
-	display: flex;
-	font-family: 'Courier New', monospace;
-	font-weight: bold;
 	background-color: black;
-	flex-wrap: wrap;
 }
 
-.calandar_header
+.calandar_navbar
 {
-	display: flex;
-	width: 100%;
-	min-width: 100%;
-	height: 10%;
-	min-height: 10%;
-	max-height: 10%;
-	text-align: center;
-	margin-bottom: 10px;
-	flex-wrap: wrap;
-	justify-content: center;
+	background: #F9264A;
+	text-shadow: 4px 0px 2px black;
 }
 
-.calandar_name
+.primary-txt-color, .secondary-txt-color, .important-txt-color
 {
-	display: flex;
-	width: 100%;
-	text-align: center;
-	color: #FC5C77;
-	justify-content: center;
-}
-
-.month_navbar
-{
-	display: flex;
-	flex-flow: row;
-	justify-content: center;
-}
-
-.month
-{
-	display: inline-flex;
-	width: 50%;
-	justify-content: center;
-	text-align: center;
-	color: #FC5C77;
-	margin-top: 0px;
-	margin-bottom: 0px;
-}
-
-.month_forward
-{
-	display: inline-flex;
-	width: 25%;
-	padding-left: 25%;
-	text-align: left;
-	color: #08CBCD;
-}
-
-.month_backward
-{
-	display: inline-flex;
-	width: 25%;
-	padding-right: 25%;
-	text-align: right;
-	color: #08CBCD;
-}
-
-.calandar_body
-{
-	display: flex;
-	flex-direction: row;
-	border-top: 4px solid linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(252,60,119,1) 50%, rgba(0,0,0,0) 100%);
-	border-bottom: 4px solid linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(252,60,119,1) 50%, rgba(0,0,0,0) 100%);
-}
-
-.calandar_days
-{
-	display: flex;
-	width: 100%;
-	padding-left: 0px;
-	counter-reset: daycounter;
-	list-style-type: none;
-	justify-content: center;
-	flex-wrap: wrap;
+	color: #08CBCE;
 }
 
 .calandar_days > li
 {
-	display: flex;
-	color: #fc5c77;
-	border: 2px solid #fc5c77;
-	box-shadow: 0px 0px 8px #fc5c77;
-	width: 24%;
-	max-height: 50%;
+	border-color: #F9264A;
+	box-shadow: 0px 0px 8px #FC5C77;
 }
 
-.calandar_days > li:before
+#sidebar_main, .sidebar
 {
-	display: flex;
-	position: relative;
-	color: #08CBCD;
-	counter-increment: daycounter;
-	content: counter(daycounter) "";
-	height: 20%;
-}
-
-.day_tag
-{
-	display: inline-flex;
-	width: 98%;
-	color: #08CBCE;
-	text-shadow: 0px 0px 20px #08CBCE;
-    	justify-content: center;
+	background-color: #F9264A;
 }
