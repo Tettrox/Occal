@@ -109,8 +109,6 @@ html
 {
 	display: flex;
 	flex-direction: row;
-	border-top: 4px solid linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(252,60,119,1) 50%, rgba(0,0,0,0) 100%);
-	border-bottom: 4px solid linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(252,60,119,1) 50%, rgba(0,0,0,0) 100%);
 }
 
 /*The list that holds all of the days of the month.*/
