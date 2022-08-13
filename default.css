@@ -29,6 +29,7 @@ html
 	display: flex;
 	width: 100%;
 }
+
 /*Modifies the container that seperates the calandar from the rest of the page; Set your background color here!*/
 .calandar
 {
@@ -188,4 +189,20 @@ html
 	{ width: 20%; }
 	to
 	{ width: 0%; }
+}
+
+@keyframes pack_calnavbar
+{
+	from
+	{ border-radius: 24px 24px 24px 0px; }
+	to
+	{ border-radius: 24px 24px 24px 24px; }
+}
+
+@keyframes unpack_calnavbar
+{
+	from
+	{ border-radius: 24px 24px 24px 24px; }
+	to
+	{ border-radius: 24px 24px 24px 0px; }
 }
