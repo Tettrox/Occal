@@ -1,1 +1,29 @@
+.important-txt-color
+{
+	color: #BDBDBD;
+}
 
+.primary-txt-color
+{
+	color: #757575;
+}
+
+.secondary-txt-color
+{
+	color: #9E9E9E;
+}
+
+html
+{
+	background: #212121; 
+}
+
+.calandar_navbar
+{
+	background: #424242; /*~42, 42, 564!~*/
+}
+
+.calandar_days > li
+{
+	border: 2px solid #424242;
+}
