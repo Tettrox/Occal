@@ -36,7 +36,6 @@ html
 	display: flex;
 	font-family: 'Courier New', monospace;
 	font-weight: bold;
-	background-color: #eeeeee;
 	flex-wrap: wrap;
 }
 
