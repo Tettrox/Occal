@@ -173,6 +173,14 @@ html
 	height: 100%;
 }
 
+/*Inside day_info. List of tasks, info, etc.*/
+.day_list > li
+{
+	display: flex;
+	width: 100%;
+	border: 2px solid #ddd;
+}
+
 /*Animations*/
 @keyframes sidebar_open
 {
