@@ -49,7 +49,7 @@ body
 /*This div contains the month navigation bar and the name of the calandar.*/
 .calandar_header
 {
-	height: 10%;
+	height: fit-content;
 	text-align: center;
 	margin-bottom: 10px;
 	flex-wrap: wrap;
