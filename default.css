@@ -40,7 +40,6 @@ body
 .calandar
 {
 	display: flex;
-	height: 100%;
 	font-family: 'Courier New', monospace;
 	font-weight: bold;
 	flex-wrap: wrap;
