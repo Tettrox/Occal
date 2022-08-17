@@ -174,7 +174,7 @@ body
 	position: absolute;
 	top: 36px;
 	z-index: 2;
-	background-color: white;
+	background: #eee;
 	width: 0%;
 	height: 100%;
 }
