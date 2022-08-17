@@ -1,9 +1,6 @@
 /*Modifies entire page. May not be visible when embedded. Set this to the same value as .calandar background!*/
 html
-{
-	height: 100%;
-	background: #eeeeee;
-}
+{ height: 100%; }
 
 body
 {
@@ -28,7 +25,11 @@ body
 .secondary-txt-color
 { color: #bbb; }
 
+.primary-background-color
+{ background: #eee; }
 
+.secondary-background-color
+{ background: #ccc; }
 
 .full-width
 {
@@ -170,7 +171,6 @@ body
 	position: absolute;
 	top: 36px;
 	z-index: 2;
-	background: #eee;
 	width: 0%;
 	height: 100%;
 }
@@ -215,6 +215,11 @@ body
 	z-index: 10;
 	background: #F00;
 	border-radius: 21px;
+}
+
+.dialog_box_title
+{
+	border: 2px solid;
 }
 
 /*Animations*/
