@@ -197,10 +197,10 @@ body
 {
 	display: flex;
 	width: 100%;
-	height: 100%;
 	position: absolute;
 	justify-content: center;
 	align-items: center;
+	align-self: center;
 	z-index: 10; /*This should override any other on-screen activity under all circumstances.*/
 }
 
