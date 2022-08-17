@@ -210,7 +210,8 @@ body
 	min-width: 25%;
 	min-height: 25%;
 	max-width: 45%;
-	max-height: 45%;
+	flex-wrap: wrap;
+	flex-direction: column;
 	position: static;
 	z-index: 10;
 	background: #F00;
@@ -219,7 +220,8 @@ body
 
 .dialog_box_title
 {
-	border: 2px solid;
+	justify-content: center;
+	border-bottom: 2px solid black;
 }
 
 /*Animations*/
