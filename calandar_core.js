@@ -194,6 +194,28 @@ function toggleSidebar()
 	return 0;
 }
 
+//Opens or closes dialog box. Returns 1 when opened and 0 when closed.
+function toggleDialogBox()
+{
+	/*TODO: Take element as argument.*/
+	let dialogBox = document.querySelector(".dialog_box");
+	let pCont = document.querySelector("#create_dial_main");
+	let compStyles = window.getComputedStyle(dialogBox);
+	console.log("dialogbox maxwidth" + compStyles.getPropertyValue('max-width'));
+
+	if (compStyles.getPropertyValue('max-width') == "0%")
+	{
+		pCont.style.animation = "none";
+		pCont.style.visible = "visible";
+		dialogBox.style.animation = "0.2s open_dialogbox forwards";
+		return 1;
+	}
+
+	dialogBox.style.animation = "0.2s close_dialogbox forwards";
+	pCont.style.animation = "0.3s disappear forwards";
+	return 0;
+}
+
 /*Init*/
 function init()
 {
