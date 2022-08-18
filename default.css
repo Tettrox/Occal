@@ -216,6 +216,7 @@ body
 	z-index: 10;
 	border: 2px solid;
 	border-radius: 21px;
+	overflow: hidden;
 }
 
 .dialog_box_title
@@ -292,4 +293,46 @@ body
 	{ border-radius: 24px 24px 24px 24px; }
 	to
 	{ border-radius: 24px 24px 24px 0px; }
+}
+
+@keyframes open_dialogbox
+{
+	from
+	{
+		min-width: 0%;
+		max-width: 0%;
+		border: 0px solid;
+	}
+	to
+	{
+		min-width: 25%;
+		max-width: 85%;
+		border: 2px solid;
+	}
+}
+
+@keyframes close_dialogbox
+{
+	from
+	{
+		min-width: 25%;
+		max-width: 85%;
+		border: 2px solid;
+		display: flex;
+	}
+	to
+	{
+		min-width: 0%;
+		max-width: 0%;
+		border: 0px solid;
+		display: none;
+	}
+}
+
+@keyframes disappear
+{
+	from
+	{ visibility: visible; }
+	to
+	{ visibility: hidden; }
 }
