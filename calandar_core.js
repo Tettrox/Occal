@@ -206,7 +206,7 @@ function toggleDialogBox()
 	if (compStyles.getPropertyValue('max-width') == "0%")
 	{
 		pCont.style.animation = "none";
-		pCont.style.visible = "visible";
+		pCont.style.visibility = "visible";
 		dialogBox.style.animation = "0.2s open_dialogbox forwards";
 		return 1;
 	}
