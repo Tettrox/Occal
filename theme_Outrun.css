@@ -32,3 +32,26 @@
 {
 	text-shadow: 4px 0px 2px black;
 }
+
+.dialog_box
+{
+	border: 2px solid #08CBCE;
+}
+
+.dialog_input
+{
+	color: #08CBCE;
+}
+
+.dialog_input > input
+{
+	background: black;
+	color: #08CBCE;
+	border: 2px solid #FC5C77;
+}
+
+.dialog_btn
+{
+	color: #FC5C77;
+	border: 2px solid #FC5C77;
+}
