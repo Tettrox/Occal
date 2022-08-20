@@ -1,16 +1,12 @@
-html
+.primary-background-color, .secondary-background-color
 {
-	background-color: black;
-}
-
-.calandar
-{
-	background-color: black;
+	background: black;
 }
 
 .calandar_navbar
 {
-	background: #F9264A;
+	background: linear-gradient(0deg, rgb(255, 0, 45) 60%, rgb(249, 38, 74) 81%);
+	/*box-shadow: 0px 0px 8px black inset;*/
 	text-shadow: 4px 0px 2px black;
 }
 
@@ -27,5 +23,12 @@ html
 
 #sidebar_main, .sidebar
 {
-	background-color: #F9264A;
+	/*background-color: #F9264A;*/
+	box-shadow: 0px 0px 8px inset;
+	background: linear-gradient(0deg, rgba(249,38,74,1) 60%, rgba(255,0,45,1) 81%);
+}
+
+.sidebar > span
+{
+	text-shadow: 4px 0px 2px black;
 }
