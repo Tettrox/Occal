@@ -93,6 +93,7 @@ body
 /*Modifies the "next month" button, by default the ">" button.*/
 .month_forward
 {
+	cursor: pointer;
 	display: inline-flex;
 	width: 25%;
 	padding-left: 25%;
@@ -102,6 +103,7 @@ body
 /*Modifies the "previous month" button, by default the "<" button.*/
 .month_backward
 {
+	cursor: pointer;
 	display: inline-flex;
 	width: 25%;
 	padding-right: 25%;
@@ -146,6 +148,7 @@ body
 /*Modifies the day of the week shown on each day in the calandar.*/
 .day_tag
 {
+	cursor: pointer;
 	display: inline-flex;
 	width: 98%;
     	justify-content: center;
