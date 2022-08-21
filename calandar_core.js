@@ -1,4 +1,4 @@
-class Task
+/*class Task
 {
 	constructor(name, content, repeat_from, repeat_to, time_start, time_end)
 	{
@@ -8,6 +8,19 @@ class Task
 		this.repeatTo = repeat_to;
 		this.timeStart = time_start;
 		this.timeEnd = time_end;
+	}
+}
+*/
+
+class Task
+{
+	constructor(day_number, name)
+	{
+		//Not the day of the week, the day number out of the total number of days.
+		this.day_no = day_number;
+		this.month_no = monthView;
+		this.name = name;
+		console.log("New task created for ${months[monthView]} ${this.day_no}: ${this.name}");
 	}
 }
 
@@ -171,7 +184,8 @@ function resizeDaysInMonth(month_no, year)
 
 function showCreationMenu(start_date)
 {
-		
+	toggleDialogBox();
+	document.getElementById("db_i2").value = (monthView + 1) + "/" + start_date;
 }
 
 //Toggles visibility of sidebar using animation. Returns 0 when closed and 1 when opened.
