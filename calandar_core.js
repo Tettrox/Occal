@@ -35,34 +35,6 @@ class Objective
 	}
 }
 
-class Day
-{
-	
-	constructor(day_number)
-	{
-		this.dayNumber = 0;
-		this.tasks = [];
-		this.objectives = [];
-	}
-	
-}
-
-class Month
-{
-
-	constructor(name, day_count)
-	{
-		this.name = name;
-		this.dayCount = day_count;
-		this.days = [];
-
-		for (let i = 1; i < this.dayCount; i++)
-		{
-			this.days.push(new Day(i));
-		}
-	}
-}
-
 /*Globals*/
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "November", "December"];
 
