@@ -322,13 +322,11 @@ body
 	{
 		min-width: 0%;
 		max-width: 0%;
-		border: 0px solid;
 	}
 	to
 	{
 		min-width: 25%;
 		max-width: 85%;
-		border: 2px solid;
 	}
 }
 
@@ -338,14 +336,12 @@ body
 	{
 		min-width: 25%;
 		max-width: 85%;
-		border: 2px solid;
 		display: flex;
 	}
 	to
 	{
 		min-width: 0%;
 		max-width: 0%;
-		border: 0px solid;
 		display: none;
 	}
 }
