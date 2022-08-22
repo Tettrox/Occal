@@ -237,6 +237,10 @@ body
 	border-bottom: 2px solid black;
 	padding-top: 8px;
 	padding-bottom: 8px;
+	position: relative;
+	top: -2rem;
+	height: fit-content;
+	padding-bottom: 0px;
 }
 
 .dialog_box_desc
@@ -271,6 +275,15 @@ body
 	margin-left: auto;
 	margin-right: auto;
 	border: 2px solid black;
+}
+
+.dialog_box_exit
+{
+	position: relative;
+	right: 1rem;
+	justify-content: right;
+	font-size: 20px;
+	padding: 2px;
 }
 
 /*Animations*/
