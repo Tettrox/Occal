@@ -241,7 +241,6 @@ body
 	top: -2rem;
 	height: fit-content;
 	padding-bottom: 0px;
-	width: 95%;
 }
 
 .dialog_box_desc
@@ -285,6 +284,7 @@ body
 	justify-content: right;
 	font-size: 20px;
 	padding: 2px;
+	z-index: 2; /*Dialog boxes and menus are 1.*/
 }
 
 /*Animations*/
