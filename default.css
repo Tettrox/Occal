@@ -279,6 +279,7 @@ body
 
 .dialog_box_exit
 {
+	cursor: pointer;
 	position: relative;
 	right: 1rem;
 	justify-content: right;
