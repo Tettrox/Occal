@@ -219,7 +219,7 @@ body
 {
 	display: flex;
 	min-width: 25%;
-	max-width: 85%;
+	max-width: 0%; /*85%*/
 	min-height: 25%;
 	flex-wrap: wrap;
 	flex-direction: column;
