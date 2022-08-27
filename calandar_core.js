@@ -202,6 +202,14 @@ function toggleDialogBox()
 	return 0;
 }
 
+function createTaskFromDBox()
+{
+	let dateInput = document.getElementById("db_i2").value;
+	let dateSelStr = dateInput.slice(dateInput.lastIndexOf('/') + 1);
+
+	let task = new Task(Number(dateSelStr), document.getElementById("db_i1").value);
+}
+
 /*Init*/
 function init()
 {
