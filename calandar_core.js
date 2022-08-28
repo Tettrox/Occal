@@ -213,7 +213,7 @@ function updateTaskList()
 	{
 		if (tasks[i].month_no == monthView)
 		{
-			document.getElementById("Day" + tasks[i].day_no + "_info").display = "flex";
+			document.getElementById("Day" + tasks[i].day_no + "_info").style.display = "flex";
 		}
 	}
 }
