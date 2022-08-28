@@ -68,8 +68,8 @@ function incrementMonthView(direction)
 		monthView = 11;
 	}
 
-	resizeDaysInMonth(monthView, today.getYear());
-	setWeekdayNames(monthView, today.getYear());
+	resizeDaysInMonth(monthView, today.getFullYear());
+	setWeekdayNames(monthView, today.getFullYear());
 	updateMonthStr(monthView);	
 	console.log("Month view changed: " + monthView);
 	return 1;
@@ -233,8 +233,8 @@ function createTaskFromDBox()
 function init()
 {
 	document.getElementById("month").innerHTML = getMonthStr(today.getMonth());
-	setWeekdayNames(today.getMonth(), today.getYear());
-	resizeDaysInMonth(today.getMonth(), today.getYear());
+	setWeekdayNames(today.getMonth(), today.getFullYear());
+	resizeDaysInMonth(today.getMonth(), today.getFullYear());
 }
 
 /*Entry point*/
