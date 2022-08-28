@@ -1,5 +1,10 @@
 /*Based on Gray 50 Material Design 2014 standards.*/
 
+.primary-background-color
+{
+	background: #212121;
+}
+
 .important-txt-color
 {
 	color: #BDBDBD;
@@ -15,11 +20,6 @@
 	color: #9E9E9E;
 }
 
-html
-{
-	background: #212121; 
-}
-
 .calandar_navbar
 {
 	background: #424242; /*~42, 42, 564!~*/
@@ -31,6 +31,11 @@ html
 }
 
 #sidebar_main, .sidebar
+{
+	background: #424242;
+}
+
+.dialog_input > input
 {
 	background: #424242;
 }
