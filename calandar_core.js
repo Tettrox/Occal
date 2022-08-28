@@ -202,6 +202,22 @@ function toggleDialogBox()
 	return 0;
 }
 
+function updateTaskList()
+{
+	for (let i = 1; i < 31; i++)
+	{
+		document.getElementById("Day" + i + "_info").style.display = "none";
+	}
+
+	for (let i = 0; i < tasks.length; i++)
+	{
+		if (tasks[i].month_no == monthView)
+		{
+			document.getElementById("Day" + tasks[i].day_no + "_info").display = "flex";
+		}
+	}
+}
+
 function createTaskFromDBox()
 {
 	let dateInput = document.getElementById("db_i2").value;
@@ -209,6 +225,7 @@ function createTaskFromDBox()
 
 	let task = new Task(Number(dateSelStr), document.getElementById("db_i1").value);
 	tasks.push(task);
+	updateTaskList();
 	toggleDialogBox();
 }
 
