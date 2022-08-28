@@ -55,3 +55,9 @@
 	color: #FC5C77;
 	border: 2px solid #FC5C77;
 }
+
+.day_list > li
+{
+	border-color: #F9264A;
+	box-shadow: 0px 0px 8px #FC5C77;
+}
