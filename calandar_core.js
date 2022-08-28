@@ -208,6 +208,8 @@ function createTaskFromDBox()
 	let dateSelStr = dateInput.slice(dateInput.lastIndexOf('/') + 1);
 
 	let task = new Task(Number(dateSelStr), document.getElementById("db_i1").value);
+	tasks.push(task);
+	toggleDialogBox();
 }
 
 /*Init*/
