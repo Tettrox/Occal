@@ -162,6 +162,7 @@ body
 .sidebar_btn
 {
 	display: inline-flex;
+	cursor: pointer;
 	margin-left: 1rem;
 	color: white;
 	font-size: 24px;
@@ -182,6 +183,7 @@ body
 
 .sidebar_link
 {
+	cursor: pointer;
 	padding: 8px;
 }
 
