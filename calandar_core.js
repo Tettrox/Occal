@@ -70,9 +70,20 @@ function incrementMonthView(direction)
 
 	resizeDaysInMonth(monthView, today.getFullYear());
 	setWeekdayNames(monthView, today.getFullYear());
-	updateMonthStr(monthView);	
+	updateMonthStr(monthView);
+	refreshDayLongTags();
 	console.log("Month view changed: " + monthView);
 	return 1;
+}
+
+function refreshDayLongTags()
+{
+	let dayLTags = document.getElementsByClass("dayinfo_container");
+
+	for (let i = 0; i < dayLTags.length; i++)
+	{
+		dayLTags[i].style.display = "none";
+	}
 }
 
 function updateMonthStr(month_no)
@@ -194,6 +205,7 @@ function toggleDialogBox()
 		pCont.style.animation = "none";
 		pCont.style.visibility = "visible";
 		dialogBox.style.animation = "0.2s open_dialogbox forwards";
+		document.getElementById("db_i1").focus();
 		return 1;
 	}
 
