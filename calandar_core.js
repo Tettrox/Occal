@@ -78,7 +78,7 @@ function incrementMonthView(direction)
 
 function refreshDayLongTags()
 {
-	let dayLTags = document.getElementsByClass("dayinfo_container");
+	let dayLTags = document.getElementsByClassName("dayinfo_container");
 
 	for (let i = 0; i < dayLTags.length; i++)
 	{
@@ -159,9 +159,16 @@ function resizeDaysInMonth(month_no, year)
 {
 	let currentDate = new Date(year, month_no + 1, 0);
 
+
+	//TODO: Optimize.
 	for (let i = currentDate.getDate() + 1; i < 33; i++)
 	{
 		document.getElementById("Day" + i).style.display = "none";
+	}
+
+	for (let i = 1; i < currentDate.getDate() + 1; i++)
+	{
+		document.getElementById("Day" + i).style.display = "flex";
 	}
 }
 
