@@ -205,6 +205,19 @@ body
 	border: 2px solid #ddd;
 }
 
+.day_lt_no
+{
+	display: inline-flex;
+	width: 5%;
+}
+
+.day_longtag
+{
+	display: inline-flex;
+	width: 95%;
+	justify-content: center;
+}
+
 #create_dial_main
 {
 	display: flex;
