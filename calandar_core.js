@@ -237,9 +237,23 @@ function updateTaskList()
 	}
 }
 
+function setDayInfoNames()
+{
+	let modDate = new Date(today.getFullYear(), monthView, 1);
+
+	//This is hardcoded to avoid wasting clock cycles running all the date code just to only hit the number of days in the month. Elements that error out will never be visible and are reset when the month changes.
+	for (let i = 1; i < 33; i++)
+	{
+		modDate.setDate(i);
+		document.getElementById("Day" + i + "_iname").innerText = days[modDate.getDay()];
+	}
+}
+
 function createTaskFromDBox()
 {
 	let dateInput = document.getElementById("db_i2").value;
+
+	//TODO: Add a catch here for if someone puts the year.
 	let dateSelStr = dateInput.slice(dateInput.lastIndexOf('/') + 1);
 
 	let task = new Task(Number(dateSelStr), document.getElementById("db_i1").value);
@@ -254,6 +268,7 @@ function init()
 	document.getElementById("month").innerHTML = getMonthStr(today.getMonth());
 	setWeekdayNames(today.getMonth(), today.getFullYear());
 	resizeDaysInMonth(today.getMonth(), today.getFullYear());
+	setDayInfoNames();
 }
 
 /*Entry point*/
