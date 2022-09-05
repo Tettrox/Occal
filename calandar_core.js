@@ -72,6 +72,7 @@ function incrementMonthView(direction)
 	setWeekdayNames(monthView, today.getFullYear());
 	updateMonthStr(monthView);
 	refreshDayLongTags();
+	updateTasks();
 	console.log("Month view changed: " + monthView);
 	return 1;
 }
@@ -249,6 +250,41 @@ function setDayInfoNames()
 	}
 }
 
+/*Removes all tasks from DOM. To restore visibility, use updateTasks.*/
+function clearTasks()
+{
+	for (let i = 1; i < 33; i++)
+	{
+		console.log(i);
+		document.getElementById("Day" + i + "_tasks").innerHTML = "";
+	}
+}
+
+function getTasksByMonth(t_month)
+{
+	let results = [];
+
+	for (let i = 0; i < tasks.length; i++)
+	{
+		if (tasks[i].month_no == t_month)
+		{ results.push(tasks[i]); }
+	}
+
+	return results;
+}
+
+function updateTasks()
+{
+	clearTasks();
+	let taskList = getTasksByMonth(monthView);
+
+	for (let i = 0; i < taskList.length; i++)
+	{
+		document.getElementById("Day" + taskList[i].day_no + "_tasks").innerHTML += "<span class='full-width'>" + taskList[i].name + "</span>";
+	}
+	updateTaskList();
+}
+
 function createTaskFromDBox()
 {
 	let dateInput = document.getElementById("db_i2").value;
@@ -258,6 +294,7 @@ function createTaskFromDBox()
 
 	let task = new Task(Number(dateSelStr), document.getElementById("db_i1").value);
 	tasks.push(task);
+	updateTasks();
 	updateTaskList();
 	toggleDialogBox();
 }
