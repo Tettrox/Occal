@@ -280,7 +280,7 @@ function updateTasks()
 
 	for (let i = 0; i < taskList.length; i++)
 	{
-		document.getElementById("Day" + taskList[i].day_no + "_tasks").innerHTML += "<span class='full-width'>" + taskList[i].name + "</span>";
+		document.getElementById("Day" + taskList[i].day_no + "_tasks").innerHTML += "<span class='important-txt-color full-width day_task'>" + taskList[i].name + "</span>";
 	}
 	updateTaskList();
 }
