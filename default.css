@@ -200,9 +200,11 @@ body
 .day_list > li
 {
 	display: none;
+	flex-wrap: wrap;
 	width: 100%;
 	height: 20px;
 	border: 2px solid #ddd;
+	border-bottom: 0px;
 }
 
 .day_lt_no
@@ -216,6 +218,15 @@ body
 	display: inline-flex;
 	width: 95%;
 	justify-content: center;
+}
+
+.day_task
+{
+	border-right: 2px solid #ddd;
+	border-left: 2px solid #ddd;
+	border-bottom: 2px solid #ddd;
+	justify-content: center;
+	background: linear-gradient(0deg, rgba(255,72,0,1) 0%, rgba(255,147,0,1) 100%);
 }
 
 #create_dial_main
