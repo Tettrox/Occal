@@ -187,6 +187,11 @@ body
 	padding: 8px;
 }
 
+.sidebar_submenu
+{
+	display: none;
+}
+
 .day_list
 {
 	height: 100%;
