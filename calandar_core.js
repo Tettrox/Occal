@@ -40,6 +40,10 @@ const months = ["January", "February", "March", "April", "May", "June", "July", 
 
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
+var sb_default_menu = [document.getElementById("sb_btn_load"), document.getElementById("sb_btn_save"), document.getElementById("sb_btn_theme"), document.getElementById("sb_btn_settings"), document.getElementById("sb_btn_about")];
+
+var sb_theme_menu = [document.getElementById("sb_btn_original"), document.getElementById("sb_btn_nightmode"), document.getElementById("sb_btn_outrun")];
+
 var today = new Date();
 var monthView = today.getMonth();
 var objectives = [];
@@ -177,6 +181,31 @@ function showCreationMenu(start_date)
 {
 	toggleDialogBox();
 	document.getElementById("db_i2").value = (monthView + 1) + "/" + start_date;
+}
+
+function switchSidebarMenu(switched_menu)
+{
+	const sbMenuList = [
+		document.getElementById("sidebar_themes_menu"),
+		document.getElementById("sidebar_main_menu")
+	];
+
+	for (let i = 0; i < sbMenuList.length; i++)
+	{
+		sbMenuList[i].style.display = "none";
+	}
+
+	switch (switched_menu)
+	{
+		case "main":
+			document.getElementById("sidebar_main_menu").style.display = "flex";
+			break;
+		case "themes":
+			document.getElementById("sidebar_themes_menu").style.display = "flex";
+			break;
+		default:
+			console.warn("Unknown menu passed to switchSidebarMenu.");
+	}
 }
 
 //Toggles visibility of sidebar using animation. Returns 0 when closed and 1 when opened.
