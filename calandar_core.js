@@ -183,6 +183,11 @@ function showCreationMenu(start_date)
 	document.getElementById("db_i2").value = (monthView + 1) + "/" + start_date;
 }
 
+function switchCalandarTheme(switched_theme)
+{
+	document.getElementById("custom_style").href = switched_theme;
+}
+
 function switchSidebarMenu(switched_menu)
 {
 	const sbMenuList = [
