@@ -169,7 +169,7 @@ body
 	z-index: 1;
 }
 
-#sidebar_main, .sidebar
+.sidebar
 {
 	display: flex;
 	position: absolute;
@@ -179,6 +179,22 @@ body
 	height: 100%;
 	flex-flow: column;
 	overflow: hidden;
+}
+
+#sidebar_main_menu
+{
+	display: flex;
+	flex-flow: column;
+	overflow: hidden;
+	height: 100%;
+}
+
+#sidebar_themes_menu
+{
+	display: none;
+	flex-flow: column;
+	overflow: hidden;
+	height: 100%;
 }
 
 .sidebar_link
