@@ -9,7 +9,7 @@
 		
 		<!--To switch the theme of your calandar, modify href="[name of theme file in same directory]" or add a new stylesheet link tag below this.-->
 		<link rel="stylesheet" href="default.css">
-		<!--<link rel="stylesheet" href="theme_NightMode.css">-->
+		<link id="custom_style" rel="stylesheet" href="">
 		<script src="calandar_core.js" defer></script>
 	</head>
 
@@ -35,12 +35,12 @@
 				<div id="sidebar_main_menu">
 					<span id="sb_btn_load" class="js_anchor full-width primary-txt-color sidebar_link">Load</span>
 					<span id="sb_btn_save" class="js_anchor full-width primary-txt-color sidebar_link">Save</span>
-					<span id="sb_btn_theme" class="js_anchor full-width primary-txt-color sidebar_link">Theme</span>
+					<span id="sb_btn_theme" class="js_anchor full-width primary-txt-color sidebar_link" onclick="switchSidebarMenu('themes')">Theme</span>
 					<span id="sb_btn_settings" class="js_anchor full-width primary-txt-color sidebar_link">Settings</span>
 					<span id="sb_btn_about" class="js_anchor full-width primary-txt-color sidebar_link">About</span>
 				</div>
-				<div id="sidebar_themes" class="sidebar_submenu primary-background-color">
-					<span class="sb_btn_back js_anchor full-width primary-txt-color sidebar_link"><-</span>
+				<div id="sidebar_themes_menu" class="sidebar_submenu primary-background-color">
+					<span class="sb_btn_back js_anchor full-width primary-txt-color sidebar_link" onclick="switchSidebarMenu('main')"><-</span>
 					<span id="sb_btn_original" class="js_anchor full-width primary-txt-color sidebar_link">Original</span>
 					<span id="sb_btn_nightmode" class="js_anchor full-width primary-txt-color sidebar_link">Night Mode</span>
 					<span id="sb_btn_outrun" class="js_anchor full-width primary-txt-color sidebar_link">Outrun</span>
