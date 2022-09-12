@@ -334,6 +334,11 @@ body
 	z-index: 2; /*Dialog boxes and menus are 1.*/
 }
 
+#about_db
+{
+	display: none;
+}
+
 /*Animations*/
 @keyframes sidebar_open
 {
