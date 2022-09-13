@@ -60,7 +60,7 @@ body
 .calandar_navbar
 {
 	background: linear-gradient(0deg, rgba(255,72,0,1) 0%, rgba(255,147,0,1) 100%);
-	/*border-radius: 21px;*/
+	border-radius: 21px;
 }
 
 /*The calandar name tag. For adjusting the name of the calandar, modify the HTML instead.*/
