@@ -31,6 +31,9 @@ body
 .secondary-background-color
 { background: #ccc; }
 
+.sidebar-background-color
+{ background: #eee; }
+
 .full-width
 {
 	display: flex;
