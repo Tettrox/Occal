@@ -1,41 +1,28 @@
 /*Based on Gray 50 Material Design 2014 standards.*/
 
 .primary-background-color
-{
-	background: #212121;
-}
+{ background: #212121; }
 
 .important-txt-color
-{
-	color: #BDBDBD;
-}
+{ color: #BDBDBD; }
 
 .primary-txt-color
-{
-	color: #757575;
-}
+{ color: #757575; }
 
 .secondary-txt-color
-{
-	color: #9E9E9E;
-}
+{ color: #9E9E9E; }
+
+.sidebar-background-color
+{ background: #424242; }
 
 .calandar_navbar
-{
-	background: #424242; /*~42, 42, 564!~*/
-}
+{ background: #424242; } /*~42, 42, 564!~*/
 
 .calandar_days > li
-{
-	border: 2px solid #424242;
-}
+{ border: 2px solid #424242; }
 
 #sidebar_main, .sidebar
-{
-	background: #424242;
-}
+{ background: #424242; }
 
 .dialog_input > input
-{
-	background: #424242;
-}
+{ background: #424242; }
