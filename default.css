@@ -340,6 +340,11 @@ body
 #about_db
 {
 	display: none;
+	justify-content: center;
+	width: 100%;
+	align-self: center;
+	position: absolute;
+	z-index: 10;
 }
 
 /*Animations*/
