@@ -179,7 +179,7 @@ function resizeDaysInMonth(month_no, year)
 
 function showCreationMenu(start_date)
 {
-	toggleDialogBox();
+	toggleDialogBox("#create_dial_main");
 	document.getElementById("db_i2").value = (monthView + 1) + "/" + start_date;
 }
 
@@ -234,11 +234,17 @@ function toggleSidebar()
 }
 
 //Opens or closes dialog box. Returns 1 when opened and 0 when closed.
-function toggleDialogBox()
+function toggleDialogBox(dID)
 {
+	if (typeof dID != "string")
+	{
+		console.warn("toggleDialogBox passed non-string value. Value: " + dID);
+		return 3;
+	}
 	/*TODO: Take element as argument.*/
-	let dialogBox = document.querySelector(".dialog_box");
-	let pCont = document.querySelector("#create_dial_main");
+	//let dialogBox = document.querySelector(".dialog_box");
+	let pCont = document.querySelector(dID);
+	let dialogBox = pCont.querySelector(".dialog_box");
 	let compStyles = window.getComputedStyle(dialogBox);
 	console.log("dialogbox maxwidth" + compStyles.getPropertyValue('max-width'));
 
