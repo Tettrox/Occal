@@ -37,7 +37,7 @@
 					<span id="sb_btn_save" class="js_anchor full-width primary-txt-color sidebar_link">Save</span>
 					<span id="sb_btn_theme" class="js_anchor full-width primary-txt-color sidebar_link" onclick="switchSidebarMenu('themes')">Theme</span>
 					<span id="sb_btn_settings" class="js_anchor full-width primary-txt-color sidebar_link">Settings</span>
-					<span id="sb_btn_about" class="js_anchor full-width primary-txt-color sidebar_link">About</span>
+					<span id="sb_btn_about" class="js_anchor full-width primary-txt-color sidebar_link" onclick="toggleDialogBox('#about_db')">About</span>
 				</div>
 				<div id="sidebar_themes_menu" class="sidebar_submenu">
 					<span class="sb_btn_back js_anchor full-width primary-txt-color sidebar_link" onclick="switchSidebarMenu('main')"><-</span>
@@ -62,7 +62,7 @@
 			</div>
 			<div id="about_db">
 				<div class="dialog_box primary-background-color">
-					<span class="dialog_box_exit full-width primary-txt-color">x</span>
+					<span class="dialog_box_exit full-width primary-txt-color" onclick="toggleDialogBox('#about_db')">x</span>
 					<span class="dialog_box_title full-width primary-txt-color">About Occal</span>
 					<span class="dialog_box_desc full-width primary-txt-color">An extendable open-source calandar webapp with no tracking.</span>
 				</div>
