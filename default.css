@@ -63,7 +63,7 @@ body
 .calandar_navbar
 {
 	background: linear-gradient(0deg, rgba(255,72,0,1) 0%, rgba(255,147,0,1) 100%);
-	/*border-radius: 21px;*/
+	border-radius: 21px;
 }
 
 /*The calandar name tag. For adjusting the name of the calandar, modify the HTML instead.*/
@@ -335,6 +335,16 @@ body
 	font-size: 20px;
 	padding: 2px;
 	z-index: 2; /*Dialog boxes and menus are 1.*/
+}
+
+#about_db
+{
+	display: none;
+	justify-content: center;
+	width: 100%;
+	align-self: center;
+	position: absolute;
+	z-index: 10;
 }
 
 /*Animations*/
