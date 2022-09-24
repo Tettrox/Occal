@@ -339,6 +339,18 @@ function createTaskFromDBox()
 	toggleDialogBox();
 }
 
+function exportTasksList()
+{
+	let compiled = "";
+
+	for (let i = 0; i < tasks.length; i++)
+	{
+		compiled += "\n" + tasks[i].month_no + "|" + tasks]i].day_no + "|" + tasks[i].name;
+	}
+
+	return compiled;
+}
+
 /*Init*/
 function init()
 {
